@@ -1,13 +1,8 @@
-<script setup lang="ts">
-import type { Task } from './server/api/task'
-
-const tasks = (await $fetch('/api/task').catch((error) => { return error.data }) as Task[])
-</script>
-
 <template>
   <div>
-    <div v-for="task in tasks" :key="task.title">
-      {{ task.title }}
+    <MainHeader class="header" />
+    <div class="contents">
+      <NuxtPage class="main" />
     </div>
   </div>
 </template>
