@@ -18,5 +18,8 @@
     "vue": "^3.3.8",
     "vue-router": "^4.2.5",
     "vue-tsc": "^1.8.22"
+  },
+  "dependencies": {
+    "sqlite3": "^5.1.6"
   }
 }
