@@ -10,20 +10,15 @@ const logout = () => {
 </script>
 
 <template>
-  <div class="header">
-    <h1>タイトル</h1>
-    <div>
+  <div class="rows-3 pt-10 pb-3">
+    <h1 class="text-5xl w-full">
+      halake-ops
+    </h1>
+    <div class="flex flex-row-reverse">
       <button @click="logout">
         Logout
       </button>
     </div>
+    <hr class="my-2 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50">
   </div>
 </template>
-
-<style>
-.header {
-  background-color: blue;
-  color: aliceblue;
-  display: flex;
-}
-</style>
